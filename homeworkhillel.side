@@ -1,0 +1,154 @@
+{
+  "id": "ef98e788-08eb-4cdb-8a44-fe150293d976",
+  "version": "2.0",
+  "name": "Test privat",
+  "url": "https://next.privat24.ua/",
+  "tests": [{
+    "id": "b63b04d2-d14c-4367-b206-5672cc4a0256",
+    "name": "Untitled",
+    "commands": [{
+      "id": "8b7f1570-3a83-44c3-aab2-9a4f940df4c0",
+      "comment": "",
+      "command": "open",
+      "target": "/money-transfer/card",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8aba329e-8aef-4dd7-bde8-1f9d3d6a2f05",
+      "comment": "",
+      "command": "type",
+      "target": "css=[data-qa-node='numberdebitSource']",
+      "targets": [],
+      "value": "4552331448138217"
+    }, {
+      "id": "3535d505-4fd6-4666-acde-512c28e15510",
+      "comment": "",
+      "command": "type",
+      "target": "css=[data-qa-node='expiredebitSource']",
+      "targets": [],
+      "value": "0524"
+    }, {
+      "id": "90d404ce-88dd-4867-81b3-819629ede6a6",
+      "comment": "",
+      "command": "type",
+      "target": "css=[data-qa-node='cvvdebitSource']",
+      "targets": [],
+      "value": "926"
+    }, {
+      "id": "1f0019b6-6fa8-4d02-b9b5-4d9675d3fc6c",
+      "comment": "",
+      "command": "type",
+      "target": "css=[data-qa-node='firstNamedebitSource']",
+      "targets": [],
+      "value": "Test"
+    }, {
+      "id": "85402529-59f3-42a6-9d60-2e95e6811f7a",
+      "comment": "",
+      "command": "type",
+      "target": "css=[data-qa-node='lastNamedebitSource']",
+      "targets": [],
+      "value": "Testovich"
+    }, {
+      "id": "7dc522cf-038a-4bd9-be15-3b59ef62837e",
+      "comment": "",
+      "command": "type",
+      "target": "css=[data-qa-node='numberreceiver']",
+      "targets": [],
+      "value": "4004159115449003"
+    }, {
+      "id": "8372ba0b-d63c-4cc2-a0be-1a64d859ee40",
+      "comment": "",
+      "command": "type",
+      "target": "css=[data-qa-node='firstNamereceiver']",
+      "targets": [],
+      "value": "Netest"
+    }, {
+      "id": "318690f5-d26e-4a03-820f-46fe1fdad4f9",
+      "comment": "",
+      "command": "type",
+      "target": "css=[data-qa-node='lastNamereceiver']",
+      "targets": [],
+      "value": "Netestovich"
+    }, {
+      "id": "a9b27ad5-23f2-4814-bada-27d89247bda6",
+      "comment": "",
+      "command": "type",
+      "target": "css=[data-qa-node='amount']",
+      "targets": [],
+      "value": "123"
+    }, {
+      "id": "425fa394-454b-4c13-86f9-0621e4943081",
+      "comment": "",
+      "command": "select",
+      "target": "css=[name='currency']",
+      "targets": [],
+      "value": "USD"
+    }, {
+      "id": "8de088c5-4c27-4f00-a60c-328fa56ed929",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[@type='submit']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f9f89f78-13c0-4e1a-b69b-1670981891fb",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=[data-qa-node=\"payer-card\"]",
+      "targets": [],
+      "value": "4552 3314 4813 8217"
+    }, {
+      "id": "8798becf-1c4e-4e5b-9578-e2124ef98d6d",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=[data-qa-node=\"payer-amount\"]",
+      "targets": [],
+      "value": "123 USD"
+    }, {
+      "id": "88e81a3a-6ceb-4cf5-90f2-da724cfa1fe3",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=[data-qa-node=\"payer-currency\"]",
+      "targets": [],
+      "value": "5.41 USD"
+    }, {
+      "id": "a232f535-1f33-4fcd-980d-6278f1de892d",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=[data-qa-node=\"receiver-name\"]",
+      "targets": [],
+      "value": "NETEST NETESTOVICH"
+    }, {
+      "id": "6d753516-e3e3-4902-b01e-5a8cbe779104",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=[data-qa-node=\"receiver-card\"]",
+      "targets": [],
+      "value": "4004 1591 1544 9003"
+    }, {
+      "id": "e9a05700-af63-4ad6-9230-e2f2e6db08b8",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=[data-qa-node=\"receiver-currency\"]",
+      "targets": [],
+      "value": "0 USD"
+    }, {
+      "id": "f0924bb5-7e61-426f-b489-3c0277e999c1",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=[data-qa-node=\"total\"]",
+      "targets": [],
+      "value": "Разом до списання 128.41 USD"
+    }]
+  }],
+  "suites": [{
+    "id": "0a020bfa-3945-4fb3-852b-3659ef4ff7ae",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["b63b04d2-d14c-4367-b206-5672cc4a0256"]
+  }],
+  "urls": ["https://next.privat24.ua/"],
+  "plugins": []
+}
